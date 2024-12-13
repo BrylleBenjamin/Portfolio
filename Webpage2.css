@@ -1,0 +1,633 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #050505;
+    color: #fcfeff;
+    padding: 20px;
+}
+
+#brylle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #000000;
+}
+
+header div {
+    max-width: 100%;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #474b4e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    flex: 1;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #d1d1d181;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+
+.dropdown {
+    display: none;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.my-skills {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#webdev {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ #personal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ #personal > p {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #3498db;
+    font-size: 40px;
+}
+#webdev > p {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #3498db;
+    font-size: 40px;
+}
+
+#webdev li  {
+    margin-bottom: 5px;
+    color: #fcfeff;
+}
+ #personal li {
+    margin-bottom: 5px;
+    color: #fcfeff;
+}
+
+
+
+#my-projects h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#my-projects p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#my-projects img {
+    border-radius: 50px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+
+.sdgbody {
+    text-align: center;
+    padding: 20px;
+    background-color: #b0e45c;
+    border-radius: 5px;
+}
+
+#sdg3 {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.sdgbody h1 {
+    font-size: 1.8rem;
+    color: #25a801;
+    margin-bottom: 10px;
+}
+
+.sdgbody p {
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #555;
+    font-size: 20px;
+}
+
+.sdgbody h2 {
+    text-align: justify;
+}
+
+.sdgbody ol {
+    margin-left: 3rem;
+    font-size: 20px;
+}
+
+.sdgbody li {
+    text-align: justify;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sdgbody p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.sdgbody p span::before {
+    content: "• "; 
+    color: black; 
+}
+
+.sdgimages {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sdgimages img {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contribute {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contribute img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contribute p {
+    max-width: 200px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#dynamicFooter {
+    text-align: center;
+    background-color: #000000;
+    color: #ecf0f1;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+#dynamicFooter a {
+    color: #1abc9c;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#dynamicFooter a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #brylle {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+
+    .btn {
+        width: 80%;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .my-skills {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 24px;
+    }
+
+    #webdev > p, #personal > p {
+        font-size: 30px;
+    }
+
+    #webdev li, #personal li {
+        font-size: 16px;
+    }
+
+
+    #my-projects img {
+        width: 80%;
+    }
+
+
+    .sdgimages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sdgimages img {
+        width: 80%;
+    }
+
+    .contribute {
+        flex-direction: column;
+    }
+
+    .contribute img {
+        width: 150px;
+    }
+
+  
+    #dynamicFooter a {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    header p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .my-skills {
+        font-size: 20px;
+    }
+
+    .sdgimages img {
+        width: 90%;
+    }
+
+    .contribute img {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #brylle {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+
+    .btn {
+        width: 80%;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .my-skills {
+        flex-direction: column;
+        gap: 30px;
+        font-size: 26px;
+    }
+
+    #webdev > p, #personal > p {
+        font-size: 34px;
+    }
+
+    #webdev li, #personal li {
+        font-size: 18px;
+    }
+
+
+    #my-projects img {
+        width: 70%;
+    }
+
+
+    .sdgimages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sdgimages img {
+        width: 70%;
+    }
+
+    .contribute {
+        flex-direction: column;
+    }
+
+    .contribute img {
+        width: 180px;
+    }
+
+    #dynamicFooter a {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        padding: 20px;
+    }
+
+    #brylle {
+        width: 110px;
+        height: 110px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+
+    .btn {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .btn-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .my-skills {
+        flex-direction: row;
+        gap: 40px;
+        font-size: 28px;
+    }
+
+    #webdev > p, #personal > p {
+        font-size: 36px;
+    }
+
+    #webdev li, #personal li {
+        font-size: 20px;
+    }
+
+
+    #my-projects img {
+        width: 60%;
+    }
+
+
+    .sdgimages {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sdgimages img {
+        width: 45%;
+    }
+
+    .contribute {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contribute img {
+        width: 160px;
+    }
+
+
+    #dynamicFooter a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        padding: 30px;
+    }
+
+    #brylle {
+        width: 150px;
+        height: 150px;
+    }
+
+    header p {
+        font-size: 22px;
+    }
+
+
+    .btn {
+        width: 30%;
+        font-size: 18px;
+    }
+
+    .btn-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .my-skills {
+        flex-direction: row;
+        gap: 80px;
+        font-size: 32px;
+    }
+
+    #webdev > p, #personal > p {
+        font-size: 44px;
+    }
+
+    #webdev li, #personal li {
+        font-size: 22px;
+    }
+
+
+    #my-projects img {
+        width: 40%;
+    }
+
+
+    .sdgimages {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sdgimages img {
+        width: 35%;
+    }
+
+    .contribute {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contribute img {
+        width: 180px;
+    }
+
+
+    #dynamicFooter a {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+   
+    header {
+        padding: 40px;
+    }
+
+    #brylle {
+        width: 180px;
+        height: 180px;
+    }
+
+    header p {
+        font-size: 24px;
+    }
+
+ 
+    .btn {
+        width: 90%;
+        font-size: 20px;
+    }
+
+
+    .my-skills {
+        gap: 120px;
+        font-size: 36px;
+    }
+
+    #webdev > p, #personal > p {
+        font-size: 48px;
+    }
+
+    #webdev li, #personal li {
+        font-size: 24px;
+    }
+
+  
+    #my-projects img {
+        width: 35%;
+    }
+
+    
+    .sdgimages {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sdgimages img {
+        width: 30%;
+    }
+
+    .contribute {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contribute img {
+        width: 160px;
+    }
+
+  
+    #dynamicFooter a {
+        font-size: 22px;
+    }
+}

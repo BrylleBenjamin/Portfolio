@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Webpage2.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/brylle.jpg" alt="brylle" id="brylle">
+
+        <div>
+            <p>Brylle Adrian D. Benjamin </p>
+            <p>Bachelor of Science in Information Technology</p>
+            <p>I specialize in creating visually engaging, responsive, and user-friendly websites. With a strong foundation in HTML, CSS, JavaScript, and modern web development frameworks, I bring both creativity and technical expertise to every project. Whether it’s building custom websites from scratch or optimizing existing ones, my goal is always to deliver high-quality solutions that enhance the user experience. Explore my portfolio to see how I can help bring your ideas to life on the web!
+                
+                </p>
+        </div>
+
+        
+
+    </header>
+
+
+    <button id="skills" class="btn" onclick="toggleContent('pskills', event)">Skills</button>
+    <div id="pskills" class="dropdown">
+        <div class="my-skills">
+        <div>
+        <ul id="webdev">
+            <p>Web Development</p>
+            <li>HTML</li>
+            <li>CSS </li>
+            <li>Java</li>
+            <li>JavaScript</li>
+
+        </ul>
+    </div>
+    <div>
+        <ul id="personal">
+            <p>Personal Skills</p>
+            <li>Logical thinking</li>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+            <li>Creative</li>
+
+        </ul>
+    </div>
+   
+</div>
+    </div>
+
+    <button id="project" class="btn" onclick="toggleContent('pproject', event)">Projects</button>
+    <div id="pproject" class="dropdown">
+     <div id="my-projects">
+       <h1 id="music">Music Player</h1>
+       <p>This code creates a simple, aesthetically styled webpage that features the lyrics of the song "You'll Be Safe Here" by Rico Blanco. It includes various elements such as text, an image, a music link, and an audio player to provide users with a multimedia experience.</p>
+       <img src="images/ss1.png" alt="" width="500px" height="auto">
+       <img src="images/ss2.png" alt="" width="500px" height="auto">
+
+       <h1>Fansite</h1>
+       <p>This code creates a webpage dedicated to the members of the South Korean girl group ITZY. The page provides a brief overview of each member, featuring their early lives, career milestones, and debut with the group. The information is complemented by images and external links for further details.</p>
+       <img src="images/ss3.png" alt="" width="500px" height="auto">
+       <img src="images/ss4.png" alt="" width="500px" height="auto">
+       <img src="images/ss5.png" alt="" width="500px" height="auto">
+       <img src="images/ss7.png" alt="" width="500px" height="auto">
+
+     </div>   
+    
+    </div>
+
+    <button id="sdg" class="btn" onclick="toggleContent('psdg', event)">SDG</button>
+    <div id="psdg" class="dropdown">
+
+        <header id="sdgheader">
+
+            <img src="images/sdg3.png" alt="" id="sdg3">
+
+        </header>
+
+        <div class="sdgbody">
+
+            <h1 >ENSURE HEALTHY LIVES</h1>
+            <h1>AND</h1>
+            <h1>PROMOTE WELL-BEING FOR ALL AT ALL AGES.</h1>
+            <p id="intro"></p>
+                
+           <h2>Skills that aligns with the 3rd SGD</h2>
+           <ol>
+
+            <li> Logical Thinking</li>
+            <p><span>Logical thinking is essential for analyzing complex health data, creating effective healthcare policies, and developing innovative solutions to address public health issues like disease prevention and treatment. For example, logically assessing healthcare infrastructure can guide better resource allocation.</span></p>
+            
+            <li>Problem Solving</li> 
+            <p><span>Problem-solving skills are critical for tackling global health challenges such as reducing maternal and child mortality, combating communicable diseases, and ensuring access to affordable healthcare. Identifying and implementing practical, sustainable solutions can drive progress toward achieving SDG 3 goals.</span></p>
+
+            <li> Critical Thinking</li>
+            <p><span>Critical thinking allows for evaluating existing health initiatives, identifying gaps, and making evidence-based improvements. It plays a key role in understanding the root causes of health disparities and designing targeted interventions for underserved populations..</span></p>
+      
+
+            <li>Creativity</li>
+            <p><span>Creativity fosters innovative approaches to health promotion and well-being. This can include developing engaging awareness campaigns, designing user-friendly health technologies, or creating new methods for delivering healthcare services in remote areas.</span></p>
+
+            
+            <span>By leveraging these skills, individuals and organizations can contribute effectively to SDG 3 initiatives, fostering a healthier and more equitable world.</span>
+
+           </ol>
+           <div class="sdgimages">
+
+            <img src="images/pic1.jpeg" alt="" id="pic1">
+            <img src="images/pic2.jpg" alt="" id="pic2">
+            <img src="images/pic3.jpg" alt="" id="pic3">
+            
+           </div>
+
+           <h1 id="how">How Can You Contribute?</h1>
+
+        <div class="contribute">
+           <img src="images/pic4-removebg-preview.png" alt="" id="pic4">
+           <p id="pp4">Advocate for healthy lifestyles and preventive healthcare.</p>
+           <img src="images/pic5-removebg-preview.png" alt="" id="pic5">
+           <p id="pp5">Support campaigns for affordable and accessible healthcare.</p>
+           <img src="images/pic6-removebg-preview.png" alt="" id="pic6">
+           <p id="pp6">Raise awareness about issues such as mental health and substance abuse.</p>
+        </div>
+
+        </div>
+    </div>
+
+    <footer id="dynamicFooter">
+        <p>&copy; 2024 My Porfolio. All rights reserved.</p>
+        <p><a href="mailto:24-01390@g.batstate-u.edu.ph">Email</a> &  <a href="https://github.com/BrylleBenjamin">Contact</a></p>
+    </footer>
+
+<script src="Webpage.js"></script>
+</body>
+
+</html>
